@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(51, 61, 61);
+  background-color: rgb(150, 192, 192);
   color: black;
   /*Garante que o body ocupe toda a altura da tela*/
   min-height: 100vh;
@@ -19,16 +19,86 @@ header {
   text-align:center;
 }
 
-.logo{
+header .logo{
     /*uso do flexbox para alinhar a logo e o titulo*/
     display: flex;
     align-items: center; /*Alinha verticalmente os itens das div em questao*/
     justify-content: center; /*Centraliza o conteudo horizontalmente*/
 
-    background-color: rgb(228, 230, 182);
+  /* background-color: rgb(228, 230, 182);*/
 }
 
-img{
+header .logo img{
     max-width: 70px;
     margin-right:10px;
+    margin-bottom: 10px;
+}
+
+header .logo h1{
+  margin-bottom: 10px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li{
+  margin: 0 15px;
+
+}
+
+nav ul li a{
+  color: rgb(11, 10, 10);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
+main{
+  padding: 20px;
+}
+
+main section{
+  margin-bottom: 40px;
+}
+/*cria um id*/
+#home{
+  background-color: #afd;
+  padding: 10px;
+  border-radius: 8px; /*faz uma borda*/
+  text-align: center;
+}
+
+#home h2{
+  color:#00796b;
+}
+
+.eventos-container{
+  display:flex;
+  gap: 20px;
+}
+
+.eventos-item{
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+
+}
+
+.rodape{
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position:fixed;
+  width: 100%;
 }
